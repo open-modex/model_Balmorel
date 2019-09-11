@@ -1,34 +1,36 @@
-File objective /objective.csv/;
+execute 'mkdir -p "../output/results"';
+
+File objective /..\output\results\objective.csv/;
 objective.pc=5;
 put objective;
 put vobj.l;
 putclose;
 
-File memory /memory.csv/;
+File memory /..\output\results\memory.csv/;
 memory.pc=5;
 put memory;
 put system.memory, "%system.memory%";
 putclose;
 
-File timebuild /timebuild.csv/;
+File timebuild /..\output\results\timebuild.csv/;
 timebuild.pc=5;
 put timebuild;
 put BALBASE4.resGen;
 putclose;
 
-File constraints /constraints.csv/;
+File constraints /..\output\results\constraints.csv/;
 constraints.pc=5;
 put constraints;
 put BALBASE4.numEqu;
 putclose;
 
-File variables2 /variables.csv/;
+File variables2 /..\output\results\variables.csv/;
 variables2.pc=5;
 put variables2;
 put BALBASE4.numVar;
 putclose;
 
-File production /production.csv/;
+File production /..\output\results\production.csv/;
 production.pc=5;
 scalar timeslice;
 put production;
