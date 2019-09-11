@@ -5,13 +5,14 @@
 **/*.xls*
 **/*.mdb
 **/*.db
-*/*.xls*
+**/*.xls*
 **/*.bak
 **/*.out
 **/*.bat
 **/*.gpr
 **/*.dat
 **/*.cmd
+**/data/*.inc
 **/model/Balmorel.l*
 **/output/economic/*.*
 /base/bui/gamsscr/*.*
