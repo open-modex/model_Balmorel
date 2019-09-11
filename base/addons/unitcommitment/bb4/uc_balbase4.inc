@@ -1,0 +1,31 @@
+* UC Translated to BB4 by Juan Gea Bermúdez 2018.
+
+* Additional equations in model definition:
+
+
+$ifi not %DECOM%==yes $ifi not %TechInvest%==yes  $goto NO_INV_NO_DECOMMISSIONING
+
+QUCVUCON
+QUCVUCU
+QUCVUCD
+
+$label  NO_INV_NO_DECOMMISSIONING
+
+QUCSTARTQ
+QUCMAXVGF
+
+
+$ifi %MINFUELCONS%==yes QUCMINVGF
+
+$ifi %MINSTARTUPTIME%==yes    QUCUT
+
+$ifi %MINSHUTDOWNTIME%==yes    QUCDT
+
+$ifi %STEPWISE_RAMPING_UC%==no_ramping $goto STEPWISERAMPING_END
+QUCRAMPU
+$ifi %STEPWISE_RAMPING_UC%==ramp_const_cost QUCRAMPING_UP_BALANCE
+$ifi %STEPWISE_RAMPING_UC%==ramp_const_cost QUCRAMPING_UP_RATE_CAPABILITY
+QUCRAMPD
+$ifi %STEPWISE_RAMPING_UC%==ramp_const_cost QUCRAMPING_DOWN_BALANCE
+$ifi %STEPWISE_RAMPING_UC%==ramp_const_cost QUCRAMPING_DOWN_RATE_CAPABILITY
+$label  STEPWISERAMPING_END

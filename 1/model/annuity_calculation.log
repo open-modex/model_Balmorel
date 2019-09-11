@@ -1,0 +1,53 @@
+
+--- Job annuity_calculation.gms Start 09/11/19 11:02:02 28.1.0 r5b48834 WEX-WEI x86 64bit/MS Windows
+--- GAMS Parameters defined
+    Input C:\Users\tilseb\balmorel_open_modex\base\auxils\annuity_calculation\annuity_calculation.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\tilseb\balmorel_open_modex\1\model\225a\
+    SysDir C:\GAMS\win64\28.1\
+    WorkDir C:\Users\tilseb\balmorel_open_modex\1\model\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 28.1.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Course License Fall 2019                       G190805/0001AO-GEN
+          Technical University of Denmark, Management Engineering    DCE146
+          License for teaching and research at degree granting institutions
+          License Admin: Thomas Stidsen, thst@man.dtu.dk                   
+--- Starting compilation
+--- annuity_calculation.gms(29) 2 Mb
+--- . ../../base/data/CCCRRRAAA.inc(12) 3 Mb
+--- annuity_calculation.gms(34) 3 Mb
+--- . ../../base/data/CCC.inc(6) 3 Mb
+--- annuity_calculation.gms(38) 3 Mb
+--- . ../data/C.inc(4) 3 Mb
+--- annuity_calculation.gms(43) 3 Mb
+--- . ../../base/data/FFF.inc(83) 3 Mb
+--- annuity_calculation.gms(48) 3 Mb
+--- . ../../base/data/FDATASET.inc(9) 3 Mb
+--- annuity_calculation.gms(53) 3 Mb
+--- . ../../base/data/FDATA.inc(47) 3 Mb
+--- annuity_calculation.gms(58) 3 Mb
+--- . ../../base/data/GGG.inc(8) 3 Mb
+--- annuity_calculation.gms(62) 3 Mb
+--- . ../data/G.inc(5) 3 Mb
+--- annuity_calculation.gms(67) 3 Mb
+--- . ../../base/data/GDATASET.inc(60) 3 Mb
+--- annuity_calculation.gms(71) 3 Mb
+--- . ../../base/data/GDATA.inc(850) 3 Mb
+--- annuity_calculation.gms(75) 3 Mb
+--- . ../../base/data/DISCOUNTRATE.inc(4) 3 Mb
+--- annuity_calculation.gms(79) 3 Mb
+--- . ../../base/data/LIFETIME_X.inc(4) 3 Mb
+--- annuity_calculation.gms(141) 3 Mb
+--- Starting execution: elapsed 0:00:00.079
+--- annuity_calculation.gms(1231) 4 Mb
+--- Putfile annuity_generation C:\Users\tilseb\balmorel_open_modex\1\model\../../base/auxils/annuity_calculation/ANNUITYCG.inc
+--- Putfile annuity_transmission C:\Users\tilseb\balmorel_open_modex\1\model\../../base/auxils/annuity_calculation/ANNUITYCX.inc
+*** Status: Normal completion
+--- Job annuity_calculation.gms Stop 09/11/19 11:02:02 elapsed 0:00:00.086
