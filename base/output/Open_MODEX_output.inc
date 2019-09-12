@@ -1,4 +1,13 @@
-execute 'mkdir -p "../output/results"';
+* ------------------------------------------------------------------------------
+* make results directory in project output folder
+* ------------------------------------------------------------------------------
+
+$ifi not dexist "../output/results"     execute 'mkdir "../output/results"';
+
+
+* ------------------------------------------------------------------------------
+* create outout files
+* ------------------------------------------------------------------------------
 
 File objective /..\output\results\objective.csv/;
 objective.pc=5;
