@@ -20,3 +20,44 @@ Balmorel is a modelling tool that can be used by energy system experts, energy c
 ## How is Balmorel supported and further developed?
 
 The model is developed and distributed under open source ideals. The source code has been provided on its homepage since 2001 and was assigned the [ISC license](https://opensource.org/licenses/ISC) in 2017. Ample documentation is available in the folder [within this repository](base/documentation). Application examples and contact information can be found on the [Balmorel homepage](https://balmorel.com). Presently the model development is mainly project driven, with a users' network around it, supporting the open source development idea.
+
+## Installation for *open_MODEX*
+
+### Install GAMS
+
+1. Choose the GAMS version depending on your system: https://www.gams.com/download/
+2. Follow the steps of installation wizard.
+
+### Set up a framework environment
+
+1. Create a directory with the __project name__ in any convenient location.
+2. Download the model from [GitHub](https://github.com/open-modex/model_Balmorel) by either:
+	- cloning the Balmorel GitHub repository, or
+	- downloading the zip file and extracting all to the previously created project directory.
+
+### Open a model in GAMS
+
+1. Navigate to one of the scenario directories, e.g. __/model_Balmorel/1__.
+2. Navigate to the __/model_Balmorel/1/model__ folder and open the .gpr file (GAMS project file).
+3. After GAMS startup, open the Balmore.gms file by:
+	- pressing Ctrl+o and
+	- navigating to __model_Balmorel/base/model__ where the .gms file is located.
+
+### Run the model
+
+Run the model by simply pressing __F9__.
+
+### Access results
+
+There are many options, here are two:
+1. The open_MODEX result files are placed in the model folder under:
+	- __/model_Balmorel/1/output/results__.
+2. Open in GAMS the __all_endofmodel.gdx__ file, which is located in the model folder under:
+	- __/model_Balmorel/1/model__.
+
+### Scenario data
+
+1. The __input data__ for the open_MODEX models is stored as __.inc__ files (plain text). They are created by the __Data.xlsm__ file, located under:
+	- __model_Balmorel/base__.
+
+2. Instructions for use can be found on its first sheet.
