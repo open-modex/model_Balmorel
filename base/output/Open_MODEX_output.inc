@@ -1,7 +1,7 @@
 * ------------------------------------------------------------------------------
 * make results directory in project output folder
 * ------------------------------------------------------------------------------
-
+*%system.time%
 $ifi not dexist "../output/results"     execute 'mkdir "../output/results"';
 
 
