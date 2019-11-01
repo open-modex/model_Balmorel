@@ -28,6 +28,8 @@ The model is developed and distributed under open source ideals. The source code
 1. Choose the GAMS version depending on your system: https://www.gams.com/download/
 2. Follow the steps of installation wizard.
 
+*Note: A GAMS licens is required.*
+
 ### Set up a framework environment
 
 1. Create a directory with the __project name__ in any convenient location.
