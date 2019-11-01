@@ -40,8 +40,12 @@ The model is developed and distributed under open source ideals. The source code
 ### Open a model in GAMS
 
 1. Navigate to one of the scenario directories, e.g. __/model_Balmorel/1__.
-2. Navigate to the __/model_Balmorel/1/model__ folder and open the .gpr file (GAMS project file).
-3. After GAMS startup, open the Balmore.gms file by:
+2. Create a new folder called model: __/model_Balmorel/1/model__.
+3. Open the __/model_Balmorel/1/model__ folder and create a new text file:
+	- name it e.g. as the scenario and
+	- change the __file extension__ from __txt__ to __gpr__ (GAMS project file).
+4. Open the .gpr file: This will start the GAMS IDE.
+5. After the GAMS startup open the Balmore.gms file by:
 	- pressing Ctrl+o and
 	- navigating to __model_Balmorel/base/model__ where the .gms file is located.
 
@@ -61,5 +65,6 @@ There are many options, here are two:
 
 1. The __input data__ for the open_MODEX models is stored as __.inc__ files (plain text). They are created by the __Data.xlsm__ file, located under:
 	- __model_Balmorel/base__.
-
 2. Instructions for use can be found on its first sheet.
+3. To export the data to __.inc__ files create a new folder on the same level as the __Data.xlsm__ called data:
+	- __model_Balmorel/base/data
