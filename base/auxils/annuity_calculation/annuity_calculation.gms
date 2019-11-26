@@ -74,17 +74,19 @@ SCALAR DISCOUNTRATE "Discount rate by country (fraction)"
 $if     EXIST '../data/DISCOUNTRATE.inc' $INCLUDE         '../data/DISCOUNTRATE.inc';
 $if not EXIST '../data/DISCOUNTRATE.inc' $INCLUDE '../../base/data/DISCOUNTRATE.inc';
 
+PARAMETER DEBT_SHARE_G(GGG) "Share of debt for the investment of each generation technology (fraction)"
+$if     EXIST '../data/DEBT_SHARE_G.inc' $INCLUDE         '../data/DEBT_SHARE_G.inc';
+$if not EXIST '../data/DEBT_SHARE_G.inc' $INCLUDE '../../base/data/DEBT_SHARE_G.inc';
+
+PARAMETER INTEREST_RATE_G(GGG) "Interest rate applied to the loan of each generation technology (fraction)"
+$if     EXIST '../data/INTEREST_RATE_G.inc' $INCLUDE         '../data/INTEREST_RATE_G.inc';
+$if not EXIST '../data/INTEREST_RATE_G.inc' $INCLUDE '../../base/data/INTEREST_RATE_G.inc';
+
 SCALAR    LIFETIME_X               "Lifetime of transmission lines (years)";
 $if     EXIST '../data/LIFETIME_X.inc' $INCLUDE         '../data/LIFETIME_X.inc';
 $if not EXIST '../data/LIFETIME_X.inc' $INCLUDE '../../base/data/LIFETIME_X.inc';
 
 PARAMETER ANNUITYCG(CCC,GGG)               "Transforms investment in technologies into annual payment (fraction)";
-
-PARAMETER DEBT_SHARE_G(GGG)              "Share of debt for the investment of each generation technology (fraction)";
-DEBT_SHARE_G(GGG)$(GDATA(GGG,'GDKVARIABL') EQ 1)=0.8;
-
-PARAMETER INTEREST_RATE_G(GGG)           "Interest rate applied to the loan of each generation technology (fraction)";
-INTEREST_RATE_G(GGG)$(GDATA(GGG,'GDKVARIABL') EQ 1)=0.07;
 
 PARAMETER PAYBACK_TIME_G(GGG)            "Payback time of the loan for generation technologies (years)";
 * Loan repayment assumption: lifetime of the technology if lifetime is higher than 20 years, else 20 years
